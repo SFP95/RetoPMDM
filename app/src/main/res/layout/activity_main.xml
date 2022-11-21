@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A98FB6"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/groupN1"
+        android:layout_width="85dp"
+        android:layout_height="201dp"
+        app:layout_constraintBottom_toTopOf="@+id/gMedOr2"
+        app:layout_constraintEnd_toStartOf="@+id/gMedVer2"
+        app:layout_constraintStart_toStartOf="@+id/dDer"
+        app:layout_constraintTop_toTopOf="@+id/fMedOr1">
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/b0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/mostrar"
+        android:layout_width="292dp"
+        android:layout_height="86dp"
+        android:background="#B0FFFFFF"
+        android:hint="0"
+        android:textAlignment="textEnd"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/fMedOr1"
+        app:layout_constraintEnd_toStartOf="@+id/dIzq"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="@+id/dDer"
+        app:layout_constraintTop_toTopOf="@+id/gTop"
+        app:layout_constraintVertical_bias="0.366" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/dDer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="56dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/dIzq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="361dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/dIzq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="280dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gMedVer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="116dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="675dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="59dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fMedOr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="188dp" />
+
+    <RadioGroup
+        android:id="@+id/groupN2"
+        android:layout_width="77dp"
+        android:layout_height="202dp"
+        app:layout_constraintBottom_toTopOf="@+id/gMedOr2"
+        app:layout_constraintEnd_toStartOf="@+id/gMedVer1"
+        app:layout_constraintStart_toEndOf="@+id/groupN1"
+        app:layout_constraintTop_toTopOf="@+id/fMedOr1">
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/punto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="." />
+
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gMedVer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <RadioGroup
+        android:id="@+id/groupN3"
+        android:layout_width="77dp"
+        android:layout_height="201dp"
+        app:layout_constraintBottom_toTopOf="@+id/gMedOr2"
+        app:layout_constraintEnd_toStartOf="@+id/dIzq2"
+        app:layout_constraintStart_toStartOf="@+id/gMedVer1"
+        app:layout_constraintTop_toTopOf="@+id/fMedOr1">
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/bIgual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="=" />
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gMedOr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="392dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gMedOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="603dp" />
+
+    <RadioGroup
+        android:id="@+id/operadores"
+        android:layout_width="88dp"
+        android:layout_height="201dp"
+        app:layout_constraintBottom_toTopOf="@+id/gMedOr2"
+        app:layout_constraintEnd_toStartOf="@+id/dIzq"
+        app:layout_constraintStart_toStartOf="@+id/dIzq2"
+        app:layout_constraintTop_toTopOf="@+id/fMedOr1">
+
+        <Button
+            android:id="@+id/resta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/suma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/multi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/divi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="/" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIMPIAR"
+        app:layout_constraintEnd_toStartOf="@+id/dIzq"
+        app:layout_constraintStart_toStartOf="@+id/dDer"
+        app:layout_constraintTop_toTopOf="@+id/gMedOr2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
