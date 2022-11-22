@@ -201,4 +201,55 @@ public class MainActivity extends AppCompatActivity {
         this.b9=findViewById(R.id.b9);
     }
 
+    public void numero(View v){
+        Button b=(Button)v;
+        String nString=b.getText().toString();
+        int nInt=Integer.parseInt(nString);
+        actualizarPantalla(nString);
+    }
+    private void actualizarNumero(String nString) {
+        TextView pantalla=(TextView) findViewById(R.id.mostrar);
+        String txtAntigui= pantalla.getText().toString();
+        String txtNuevo= this.nuevoNum && this.n1==0 ? nString : txtAntigui+ pantalla.setText(textenuevo);
+    }
+
+    private void actualizarPantalla(String nString) {
+        TextView pantalla=(TextView) findViewById(R.id.mostrar);
+        String txtAntigui= pantalla.getText().toString();
+        String txtNuevo= this.nuevoNum && this.n1==0 ?
+    }
+    public void operar(View v){
+      Button operacionB=(Button) v;
+      String operacionString= operacionB.getText().toString();
+      this.estadoINtroN1=false;
+      actualizarPantalla(operacionString);
+    }
+    public int operar(){
+        int sol=0;
+        switch (this.operador){
+            case "+":sol= (int) (this.n1+this.n2);break;
+            case "-":sol= (int) (this.n1-this.n2);break;
+            case "*":sol= (int) (this.n1*this.n2);break;
+            case "/":sol= (int) (this.n1/this.n2);break;
+
+        }
+        return sol;
+    }
+    public void igual(View v){
+        int sol= operar();
+        cambiarPantalla(Integer.toString(sol));
+
+    }
+
+    private void cambiarPantalla(String pantallaFinal) {
+        TextView pantalla= (TextView) findViewById(R.id.mostrar);
+        pantalla.setText(pantallaFinal);
+    }
+
+    public void limpiar(View v){
+        Button operacionB=(Button) v;
+        String operacionString= operacionB.getText().toString();
+        this.estadoINtroN1=false;
+        actualizarPantalla(operacionString);
+    }
 }
