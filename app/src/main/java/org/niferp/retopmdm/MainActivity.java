@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 operador="+";
                 concatenar=findViewById(R.id.mostrar);
-                n1=Double.parseDouble(concatenar.getText().toString());
+                n1=Double.parseDouble(concatenar.getText().toString()+"+");
                 mostrar.setText("");
             }
         });
@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 operador="-";
                 concatenar=findViewById(R.id.mostrar);
-                n1=Double.parseDouble(concatenar.getText().toString());
+                n1=Double.parseDouble(concatenar.getText().toString()+"-");
                 mostrar.setText("");
             }
         });
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 operador="*";
                 concatenar=findViewById(R.id.mostrar);
-                n1=Double.parseDouble(concatenar.getText().toString());
+                n1=Double.parseDouble(concatenar.getText().toString()+"*");
                 mostrar.setText("");
             }
         });
@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 operador="/";
                 concatenar=findViewById(R.id.mostrar);
-                n1=Double.parseDouble(concatenar.getText().toString());
+                n1=Double.parseDouble(concatenar.getText().toString()+"/");
                 mostrar.setText("");
             }
         });
